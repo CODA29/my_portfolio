@@ -83,12 +83,12 @@ $font-family: "Special Elite", cursive;
     @media only screen and (max-width: 900px) {
       & {
         //font-size: 1.2rem;
-        width: 330px;
+        width: 350px;
         // padding-top: 2rem;
       }
     }
     #hi {
-      font-size: 2rem;
+      font-size: 1.6rem;
       #name {
         color: $teal;
       }
