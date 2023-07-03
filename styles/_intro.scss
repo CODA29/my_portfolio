@@ -59,6 +59,7 @@ $font-family: "Special Elite", cursive;
 
 //Intro and container
 .introContainer {
+  width: 400px;
   position: absolute;
   left: 0;
   padding: 0 5%;
@@ -71,6 +72,8 @@ $font-family: "Special Elite", cursive;
       top: 40px;
       left: unset;
       width: 100%;
+      
+      
     }
   }
   p {
@@ -81,10 +84,12 @@ $font-family: "Special Elite", cursive;
     font-size: 1.2rem;
     line-height: 2.2rem;
     padding-top: 2rem;
+    //text-align: center;
     @media only screen and (max-width: 900px) {
       & {
+        text-align: center;
         //font-size: 1.2rem;
-        width: 350px;
+        //width: 350px;
         // padding-top: 2rem;
       }
     }
