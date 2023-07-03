@@ -228,7 +228,6 @@ $teal: #2a8b83;
         img{
             width: 5rem;
             height: 5rem;
-            //border-radius: 50%;
             //filter: drop-shadow(2px 2px 5px #000000);
             
     
@@ -276,19 +275,19 @@ $teal: #2a8b83;
     grid-column: 1 / span 6;
     grid-row: 1;
     order: 0;
-    //box-shadow: none;
     height: 40vh;
     flex-direction: row;
     gap: 1rem;
     padding: 2%;
     margin: 1% 0;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    //border-bottom-right-radius: unset;
-    //border-bottom-left-radius: unset;
+
     cursor: pointer;
     
+
     //this will overide the alignment of items once the card is clicked
     align-items: unset;
+    
     @media only screen and (max-width: 800px) {
         &{
             flex-direction: column;
