@@ -210,10 +210,10 @@
 }
 
 .nav {
+  background: white;
   position: fixed;
   top: 0;
   width: 100%;
-  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,7 +227,7 @@
   -webkit-animation: animate1 1.2s ease 0.5s forwards;
 }
 .nav .logoContainer .logo {
-  color: #2a8b83;
+  color: #be651c;
   font-family: "Special Elite", cursive;
   font-size: 2.2rem;
   letter-spacing: 0.08rem;
@@ -261,7 +261,7 @@
   width: 100%;
 }
 .nav .pages .nav-items a {
-  color: #2a8b83;
+  color: #3e4447;
   font-size: 0.9rem;
   text-decoration: none;
   font-family: "Special Elite", cursive;
@@ -276,7 +276,7 @@
 }
 @media only screen and (max-width: 800px) {
   .nav .burger {
-    color: #2a8b83;
+    color: #be651c;
     display: block;
     font-size: 23px;
   }

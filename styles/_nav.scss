@@ -3,6 +3,7 @@ $primaryColor:#be651c;
 $primaryLight: #dbaa7e;
 $secondaryColor:#3e4447;
 $teal: #2a8b83;
+$thirdColor: #d4d9dc;
 $fontFamily : 'Special Elite', cursive;
 
 
@@ -13,11 +14,10 @@ $fontFamily : 'Special Elite', cursive;
   }
 
 .nav{
-    
+    background: white;
     position: fixed;
     top: 0;
     width: 100%;
-    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +34,7 @@ $fontFamily : 'Special Elite', cursive;
         animation: animate1 1.2s ease .5s forwards;
         -webkit-animation: animate1 1.2s ease .5s forwards;
         .logo{
-            color: $teal;
+            color: $primaryColor;
             font-family: 'Special Elite', cursive;
             font-size: 2.2rem;
             letter-spacing: .08rem;
@@ -76,7 +76,7 @@ $fontFamily : 'Special Elite', cursive;
         
             a{
                 
-                color: $teal; 
+                color: $secondaryColor; 
                 font-size: .9rem;
                 text-decoration: none;
                 font-family: 'Special Elite', cursive;
@@ -100,8 +100,8 @@ $fontFamily : 'Special Elite', cursive;
         @media only screen and (max-width: 800px){
             
             &{  
-                //color: $primaryColor;
-                color: $teal;
+                color: $primaryColor;
+                //color: $teal;
                 display: block;
                 font-size: 23px;
 
