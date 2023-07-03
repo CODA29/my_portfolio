@@ -17,11 +17,10 @@ $border: 1px solid black;
     //height: 100vh;
     padding-top: 3rem;
     position: relative;
-    top: 70rem;
-   // background: $primaryColor;
+    top: 40rem;
     background: $secondaryColor;
     @media only screen and (max-width: 800px) {
-        top: 115rem;
+        top:70rem;
     }
     .contact_formIntro{
         margin-top: 4rem;
@@ -56,8 +55,7 @@ $border: 1px solid black;
     
     .contactSplit .shape-fill {
         fill: $teal;
-        //fill: $primaryColor;
-        
+       
     }
     
     .contact_form{

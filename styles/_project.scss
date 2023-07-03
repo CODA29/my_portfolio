@@ -15,7 +15,7 @@ $teal: #2a8b83;
     height: 100vh;
     position: relative;
     padding: 30px;
-    top: 28rem;
+    top: 20rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -23,8 +23,9 @@ $teal: #2a8b83;
     
     @media only screen and (max-width: 800px) {
        &{
-        top: 85rem;
+        top: 60rem;
         flex-direction: column;
+        height: unset;
         
        } 
     }

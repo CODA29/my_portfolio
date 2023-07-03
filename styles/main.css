@@ -45,7 +45,7 @@
     max-width: 600px;
     flex-direction: column-reverse;
     margin-top: 10%;
-    top: 22rem;
+    top: 28rem;
   }
 }
 
@@ -408,7 +408,8 @@
   #about {
     background: none;
     flex-direction: column;
-    top: 15rem;
+    top: 55rem;
+    height: unset;
   }
 }
 #about .title {
@@ -678,7 +679,7 @@
   height: 100vh;
   position: relative;
   padding: 30px;
-  top: 28rem;
+  top: 20rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -686,8 +687,9 @@
 }
 @media only screen and (max-width: 800px) {
   #project {
-    top: 85rem;
+    top: 60rem;
     flex-direction: column;
+    height: unset;
   }
 }
 #project img {
@@ -811,12 +813,12 @@
 #contact {
   padding-top: 3rem;
   position: relative;
-  top: 70rem;
+  top: 40rem;
   background: #3e4447;
 }
 @media only screen and (max-width: 800px) {
   #contact {
-    top: 115rem;
+    top: 70rem;
   }
 }
 #contact .contact_formIntro {
@@ -975,7 +977,7 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .landingPage {
-    top: 3rem;
+    height: unset;
   }
 }
 
