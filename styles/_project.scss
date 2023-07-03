@@ -13,17 +13,17 @@ $teal: #2a8b83;
   }
 #project{
     height: 100vh;
-    position: relative;
+    position: absolute;
     padding: 30px;
-    top: 20rem;
+    top: 135rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    
+    z-index: -1;
     @media only screen and (max-width: 800px) {
        &{
-        top: 60rem;
+        top: 155rem;
         flex-direction: column;
         height: unset;
         

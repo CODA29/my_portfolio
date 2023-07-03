@@ -406,7 +406,6 @@
 }
 @media only screen and (max-width: 800px) {
   #about {
-    background: none;
     flex-direction: column;
     top: 55rem;
     height: unset;
@@ -436,6 +435,8 @@
   #about .title2 {
     display: block;
     padding-top: 45px;
+    position: absolute;
+    top: 9rem;
   }
 }
 
@@ -451,6 +452,8 @@
   .cardWrapper {
     display: block;
     width: 100%;
+    position: relative;
+    top: 17rem;
   }
 }
 
@@ -677,17 +680,18 @@
 
 #project {
   height: 100vh;
-  position: relative;
+  position: absolute;
   padding: 30px;
-  top: 20rem;
+  top: 135rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 @media only screen and (max-width: 800px) {
   #project {
-    top: 60rem;
+    top: 155rem;
     flex-direction: column;
     height: unset;
   }
@@ -813,12 +817,12 @@
 #contact {
   padding-top: 3rem;
   position: relative;
-  top: 40rem;
+  top: 95rem;
   background: #3e4447;
 }
 @media only screen and (max-width: 800px) {
   #contact {
-    top: 70rem;
+    top: 180rem;
   }
 }
 #contact .contact_formIntro {

@@ -79,10 +79,11 @@ $teal: #2a8b83;
 
     @media only screen and (max-width: 800px) {
         &{
-            background: none;
+           
             flex-direction: column;
             top: 55rem;
             height: unset;
+          
         }
         
      }
@@ -111,6 +112,8 @@ $teal: #2a8b83;
             &{
                 display: block;
                 padding-top: 45px;
+                position: absolute;
+                top: 9rem;
             }
         }
     }
@@ -131,7 +134,8 @@ $teal: #2a8b83;
         &{
          display: block;
          width: 100%;
-        
+         position: relative;
+         top: 17rem;
         }
         
      }
