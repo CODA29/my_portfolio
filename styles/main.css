@@ -685,7 +685,7 @@
 }
 @media only screen and (max-width: 800px) {
   #project {
-    top: 70rem;
+    top: 100rem;
     flex-direction: column;
   }
 }
