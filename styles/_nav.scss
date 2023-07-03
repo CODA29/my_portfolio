@@ -1,0 +1,214 @@
+// Variables
+$primaryColor:#be651c;
+$primaryLight: #dbaa7e;
+$secondaryColor:#3e4447;
+$teal: #2a8b83;
+$fontFamily : 'Special Elite', cursive;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.nav{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    z-index: 99;
+    
+    
+
+    .logoContainer{
+
+       
+        opacity: 0;
+        transform: translateX(-50px);
+        animation: animate1 1.2s ease .5s forwards;
+        -webkit-animation: animate1 1.2s ease .5s forwards;
+        .logo{
+            color: $teal;
+            font-family: 'Special Elite', cursive;
+            font-size: 2.2rem;
+            letter-spacing: .08rem;
+            text-decoration: none;
+            position: relative;
+            transition: 0.5s;
+        
+            @media only screen and (max-width: 800px) {
+                font-size: 23px;
+               
+            }
+            
+        }
+    }
+
+    .pages{
+
+        display: flex;
+        gap: 3rem;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: animate1 2s ease 1s forwards;
+        -webkit-animation: animate1 2s ease 1s forwards;
+        .nav-items{
+
+            position: relative;
+
+            .activeNav{
+                height: 3px;
+                background: $primaryColor;
+                border-radius: 1rem;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                width: 100%;
+
+
+            }
+        
+            a{
+                
+                color: $teal; 
+                font-size: .9rem;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                
+                @media only screen and (max-width: 800px){
+                    &{
+                        display: none
+                    }
+                    
+                }
+                    
+            }
+            
+        }
+            
+    }
+
+    .burger{
+
+        display: none;
+        @media only screen and (max-width: 800px){
+            
+            &{  
+                //color: $primaryColor;
+                color: $teal;
+                display: block;
+                font-size: 23px;
+
+            }
+            
+
+        }
+    }
+
+//once the burger button is clicked   
+
+
+    @media only screen and (max-width: 800px) {
+       
+        &.clicked{
+            padding: 1rem;
+            align-items: unset;
+            justify-content: space-evenly;
+            transition: 0.7s;
+            height: 60%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+
+            &:hover{
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                filter: drop-shadow(0px 0px 0px black);
+                transition: 0.7s;
+            }
+            .logo{
+                color: $primaryLight;
+            }
+            
+            
+            .pages{
+                
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                position: absolute;
+                top: 25%;
+
+                .nav-items{
+                    
+
+                    a{  text-align: center; 
+                        display: block;
+                        color: $primaryLight;
+                        &:hover{
+                            
+                            color: white;
+                        }
+                        .fa-solid{
+                            color: white;
+                            font-size: 18px;
+
+                            &:hover{
+                                
+                                color: $primaryColor;
+                            }
+                            
+                        }
+                    }
+
+                    .activeNav{
+                        display: none;
+                    }
+
+                }
+
+            }
+            .burger{
+                
+                margin-left: auto;
+                color: $primaryLight;
+                
+            }
+                
+        }
+        
+    }
+
+}
+
+@keyframes animate1{
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+@-webkit-keyframes animate1{
+    
+    100%{
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+}
+@keyframes animate2{
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@-webkit-keyframes animate2{
+    
+    100%{
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+}

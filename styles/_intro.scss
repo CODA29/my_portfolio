@@ -1,0 +1,252 @@
+//variables
+$primaryColor: #be651c;
+$secondaryColor: #3e4447;
+$thirdColor: #d4d9dc;
+$teal: #2a8b83;
+$border: 1px solid black;
+$font-family: "Special Elite", cursive;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tilt {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.tilt svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 205px;
+}
+
+.tilt .shape-fill {
+  //fill: $primaryColor;
+  fill: #2a8b83;
+}
+
+//main intro section
+.introWrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  max-width: 1000px;
+  margin: auto;
+  left: 0;
+  right: 0;
+
+  @media only screen and (max-width: 800px) {
+    & {
+      max-width: 600px;
+      flex-direction: column-reverse;
+      margin-top: 10%;
+    }
+  }
+}
+
+//Intro and container
+.introContainer {
+  position: absolute;
+  left: 0;
+  padding: 0 5%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: animate1 3s ease 2.5s forwards;
+  -webkit-animation: animate1 3s ease 2.5s forwards;
+  @media only screen and (max-width: 800px) {
+    & {
+      top: 40px;
+      left: unset;
+    }
+  }
+  p {
+    width: 380px;
+    font-family: $font-family;
+    letter-spacing: 0.1rem;
+    color: $secondaryColor;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    padding-top: 2rem;
+    @media only screen and (max-width: 900px) {
+      & {
+        //font-size: 1.2rem;
+        width: 330px;
+        // padding-top: 2rem;
+      }
+    }
+    #hi {
+      font-size: 2rem;
+      #name {
+        color: $teal;
+      }
+    }
+  }
+}
+
+@keyframes animate1 {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animate1 {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+//Image and container
+.imgContainer {
+  position: absolute;
+  right: 0;
+  padding: 0 5%;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: animate2 1.2s ease 0.5s forwards;
+  -webkit-animation: animate2 1.2s ease 0.5s forwards;
+  @media only screen and (max-width: 800px) {
+    & {
+      right: unset;
+      transform: translateY(-100px);
+      animation: animate3 1.2s ease 0.5s forwards;
+      -webkit-animation: animate3 1.2s ease 0.5s forwards;
+    }
+  }
+
+  img {
+    //width: 300px;
+    width: 18rem;
+    @media only screen and (max-width: 900px) {
+      & {
+        max-width: 250px;
+      }
+    }
+  }
+  a{
+    text-decoration: none!important;
+  }
+  #msg_wrap {
+    position: relative;
+    margin-left: auto;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media only screen and (max-width: 900px) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    border-radius: 1em;
+    //border: 2px dashed white;
+    background: $primaryColor;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    //transition: 6s;
+    width: 5rem;
+    height: 4rem;
+    padding: 1.6em;
+    //-webkit-animation: spin 20s linear infinite;
+    //animation: spin 20s linear infinite;
+    @media only screen and (max-width: 900px) {
+      width: 3.5rem;
+      height: 3.5rem;
+      //border: 1px dashed #ffffff;
+      transition: 3s;
+    }
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  // Incase if I want to apply this when user clicks on my image
+  /*
+  #msg {
+    display: none;
+  }
+  
+  #msg.show_msg {
+    display: block;
+    z-index: 1;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 0.8rem;
+    color: white;
+    @media only screen and (max-width: 900px) {
+      font-size: 0.6rem;
+    }
+  }
+  */
+  .show_msg {
+    display: block;
+    z-index: 1;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    color: white;
+    
+    @media only screen and (max-width: 900px) {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+
+@keyframes animate2 {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes animate2 {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes animate3 {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animate3 {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}

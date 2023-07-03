@@ -1,0 +1,156 @@
+$border: 1px solid black;
+$fontFamily : 'Special Elite', cursive;
+$secondFontFamily: Georgia, 'Times New Roman', Times, serif;
+$primaryColor: #be651c;
+$secondaryColor: #3e4447;
+$thirdColor: #d4d9dc;
+$teal: #2a8b83;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+#project{
+    height: 100vh;
+    position: relative;
+    padding: 30px;
+    top: 28rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    
+    @media only screen and (max-width: 800px) {
+       &{
+        top: 70rem;
+        flex-direction: column;
+        
+       } 
+    }
+    img{
+        width: 100%;
+        border-radius: .5rem;
+        //box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        @media only screen and (max-width: 800px) {
+            margin: auto;
+            box-shadow: none;
+        }
+
+    }
+    
+    .title{
+        color: $teal;
+        font-family: $fontFamily;
+        font-size: 1.2rem;
+        font-weight: lighter;
+        float: right;
+        display: flex;
+        flex-direction:column;
+        @media only screen and (max-width: 800px) {
+            &{
+                display: none;
+            }
+        }
+     
+    }
+    .title2{
+        color: $secondaryColor;
+        font-family: $fontFamily;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        display: none;
+        @media only screen and (max-width: 800px) {
+            &{
+                display: block;
+                padding-bottom: 5rem;
+               
+            }
+        }
+    }
+    
+   
+    .projects{
+        
+        
+        .pro_card{
+            width: 90%;
+            margin: auto;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+            border-radius:.5rem;
+            margin-bottom: 2.2rem;
+            @media only screen and (max-width: 800px) {
+                &{
+                    flex-direction: column-reverse;
+                    font-size: 1.5rem;
+                    width: 100%;
+                    
+                
+                }
+            }
+
+            .child1{
+                padding: 3rem;
+                width: 100%;
+            }
+
+            .child2{
+                max-height: 30rem;
+                //overflow-y: hidden;
+                
+                h2{
+                    color: $primaryColor;
+                    font-family: $fontFamily;
+                    font-weight: lighter;
+                    font-size: 2rem;
+                    @media only screen and (max-width: 800px) {
+                        font-size: 1.5rem;
+                    }
+                }
+                p{
+                    letter-spacing: .1rem;
+                    font-size: 1.08rem;
+                    line-height: 2rem;
+                    color: $secondaryColor;
+                   
+                    
+                }
+                button{
+                    background: $teal;
+                    border-radius: .5rem;
+                    color: white;
+                    padding: .6rem;
+                    border: none;
+                    cursor: pointer;
+                    margin-right: .4rem;
+                    a{
+                        text-decoration: none;
+                        display:inline-flex;
+                        align-items: center;
+                        gap: .3rem;
+                        color: white;
+                        font-family: $secondFontFamily;
+                        letter-spacing: .1rem;
+                        .fa-solid, .fa-brands{
+                            font-size: 2rem;
+                            @media only screen and (max-width: 800px) {
+                                font-size: 1.5rem;
+                            }
+
+                        }
+                    }
+                    
+                }
+
+            }
+            
+        }
+
+    }
+    
+    
+}

@@ -1,0 +1,74 @@
+//importing the stylesheets together
+@import "./intro";
+@import "./nav";
+@import "./about";
+@import "./project";
+@import "./contact";
+
+//Variables
+$primaryColor: #be651c;
+$primaryLight: #dbaa7e;
+$secondaryColor: #3e4447;
+$thirdColor: #d4d9dc;
+$border: 1px solid black;
+$fontFamily : 'Special Elite', cursive;
+$font-family2: 'Urbanist', sans-serif;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    overflow-x: hidden;
+   
+}
+.landingPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    z-index: 2;
+    @media only screen and (max-width: 800px) {
+        top: 3rem;
+    }
+  
+   
+}
+
+#scrollBtn{ 
+    display: none;
+    border: none;
+    background: none;
+    position: fixed;
+    bottom: 30px;
+    right: 3rem;
+    font-size: .6rem;
+    cursor: pointer;
+    z-index: 99;
+   
+    .fa-solid{
+        --fa-bounce-start-scale-x: 1; 
+        --fa-bounce-start-scale-y: 1; 
+        --fa-bounce-jump-scale-x: 1; 
+        --fa-bounce-jump-scale-y: 1; 
+        --fa-bounce-land-scale-x: 1; 
+        --fa-bounce-land-scale-y: 1; 
+        --fa-bounce-rebound: 0;
+        color: $primaryColor;
+        
+    }
+    @media only screen and (max-width: 800px) {
+        &{
+            font-size: .5rem;
+            right: 1rem;
+        }
+    }
+    
+}
+
+
