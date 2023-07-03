@@ -23,7 +23,7 @@ $teal: #2a8b83;
     
     @media only screen and (max-width: 800px) {
        &{
-        top: 75rem;
+        top: 85rem;
         flex-direction: column;
         
        } 
@@ -128,7 +128,10 @@ $teal: #2a8b83;
                     padding: .6rem;
                     border: none;
                     cursor: pointer;
-                    margin-right: .4rem;
+                    margin: .1rem;
+                    @media only screen and (max-width: 800px) {
+                       padding: .3rem;
+                    }
                     a{
                         text-decoration: none;
                         display:inline-flex;

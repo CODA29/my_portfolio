@@ -45,6 +45,7 @@
     max-width: 600px;
     flex-direction: column-reverse;
     margin-top: 10%;
+    top: 25rem;
   }
 }
 
@@ -407,7 +408,7 @@
   #about {
     background: none;
     flex-direction: column;
-    top: 10rem;
+    top: 15rem;
   }
 }
 #about .title {
@@ -685,7 +686,7 @@
 }
 @media only screen and (max-width: 800px) {
   #project {
-    top: 75rem;
+    top: 85rem;
     flex-direction: column;
   }
 }
@@ -776,7 +777,12 @@
   padding: 0.6rem;
   border: none;
   cursor: pointer;
-  margin-right: 0.4rem;
+  margin: 0.1rem;
+}
+@media only screen and (max-width: 800px) {
+  #project .projects .pro_card .child2 button {
+    padding: 0.3rem;
+  }
 }
 #project .projects .pro_card .child2 button a {
   text-decoration: none;
@@ -810,7 +816,7 @@
 }
 @media only screen and (max-width: 800px) {
   #contact {
-    top: 100rem;
+    top: 115rem;
   }
 }
 #contact .contact_formIntro {
