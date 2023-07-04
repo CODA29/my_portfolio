@@ -56,8 +56,8 @@
   padding: 0 5%;
   opacity: 0;
   transform: translateY(50px);
-  animation: animate1 3s ease 2.5s forwards;
-  -webkit-animation: animate1 3s ease 2.5s forwards;
+  animation: animate1 2s ease 2.5s forwards;
+  -webkit-animation: animate1 2s ease 2.5s forwards;
 }
 @media only screen and (max-width: 800px) {
   .introContainer {
@@ -82,7 +82,7 @@
 .introContainer p #hi {
   font-size: 1.6rem;
 }
-.introContainer p #hi #name {
+.introContainer p #hi #nme {
   color: #2a8b83;
 }
 
