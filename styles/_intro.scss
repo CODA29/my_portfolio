@@ -35,7 +35,8 @@ $font-family: "Special Elite", cursive;
 
 .tilt .shape-fill {
   //fill: $primaryColor;
-  fill: #2a8b83;
+  fill: $secondaryColor;
+  //fill: white;
 }
 
 //main intro section
@@ -95,7 +96,8 @@ $font-family: "Special Elite", cursive;
     #hi {
       font-size: 1.6rem;
       #nme {
-        color: $teal;
+        //color: $teal;
+        color: $primaryColor;
       }
     }
   }
@@ -164,6 +166,7 @@ $font-family: "Special Elite", cursive;
     border-radius: 1em;
     //border: 2px dashed white;
     background: $primaryColor;
+    //background: $teal;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     //transition: 6s;
     width: 5rem;

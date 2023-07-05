@@ -28,7 +28,7 @@
 }
 
 .tilt .shape-fill {
-  fill: #2a8b83;
+  fill: #3e4447;
 }
 
 .introWrapper {
@@ -83,7 +83,7 @@
   font-size: 1.6rem;
 }
 .introContainer p #hi #nme {
-  color: #2a8b83;
+  color: #be651c;
 }
 
 @keyframes animate1 {
@@ -374,12 +374,7 @@
   transform: rotateY(180deg);
 }
 #about .top_arrow .shape-fill {
-  fill: #d4d9dc;
-}
-@media only screen and (max-width: 800px) {
-  #about .top_arrow .shape-fill {
-    fill: #2a8b83;
-  }
+  fill: #3e4447;
 }
 #about .bottom_arrow {
   position: absolute;
@@ -401,7 +396,7 @@
   height: 136px;
 }
 #about .bottom_arrow .shape-fill {
-  fill: #d4d9dc;
+  fill: #3e4447;
 }
 @media only screen and (max-width: 800px) {
   #about {
@@ -411,7 +406,7 @@
   }
 }
 #about .title {
-  color: #2a8b83;
+  color: #be651c;
   font-family: "Special Elite", cursive;
   font-weight: lighter;
   font-size: 1.2rem;
@@ -458,8 +453,9 @@
 
 .card {
   height: 15rem;
+  background: white;
   position: relative;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   margin: auto;
   width: 100%;
   border-radius: 8px;
@@ -473,6 +469,7 @@
   .card {
     height: 17rem;
     margin: 1.3rem 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   }
 }
 .card h3 {
@@ -547,7 +544,7 @@
   gap: 1rem;
   padding: 2%;
   margin: 1% 0;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   align-items: unset;
 }
@@ -711,7 +708,7 @@
   }
 }
 #project .title {
-  color: #2a8b83;
+  color: #be651c;
   font-family: "Special Elite", cursive;
   font-size: 1.2rem;
   font-weight: lighter;
@@ -744,9 +741,8 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   gap: 5rem;
 }
 @media only screen and (max-width: 800px) {
@@ -784,7 +780,7 @@
   color: #3e4447;
 }
 #project .projects .pro_card .child2 button {
-  background: #2a8b83;
+  background: #3e4447;
   border-radius: 0.5rem;
   color: white;
   padding: 0.6rem;
@@ -829,12 +825,12 @@
 }
 @media only screen and (max-width: 800px) {
   #contact {
-    top: 200rem;
+    top: 215rem;
   }
 }
 @media only screen and (max-width: 600px) {
   #contact {
-    top: 185rem;
+    top: 195rem;
   }
 }
 #contact .contact_formIntro {
@@ -868,7 +864,7 @@
   height: 280px;
 }
 #contact .contactSplit .shape-fill {
-  fill: #2a8b83;
+  fill: #d4d9dc;
 }
 #contact .contact_form {
   margin-bottom: 20rem;
@@ -928,6 +924,7 @@
   font-weight: lighter;
   padding: 1.2rem;
   background: #be651c;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   color: white;
   font-size: 1rem;
   width: 150px;
@@ -966,7 +963,7 @@
   padding: 0.7rem;
 }
 #contact .copyright p {
-  color: white;
+  color: #3e4447;
   text-align: center;
   letter-spacing: 0.1rem;
   font-size: 0.9rem;

@@ -13,7 +13,7 @@ $teal: #2a8b83;
     padding: 0;
   }
 #about{
-    
+    //background: $secondaryColor;
     position: relative;
     height: 100vh;
     display: flex;
@@ -40,13 +40,10 @@ $teal: #2a8b83;
     }
     
     .top_arrow .shape-fill {
-        fill: $thirdColor;
+        fill: $secondaryColor ;
+        //fill: $teal;
         @media only screen and (max-width: 800px) {
-           &{
-            fill: $teal;
-            
-
-           } 
+           
         }
     }
     .bottom_arrow {
@@ -71,7 +68,7 @@ $teal: #2a8b83;
     
     .bottom_arrow .shape-fill {
        
-        fill: $thirdColor;
+        fill: $secondaryColor;
     }
     
     
@@ -88,7 +85,7 @@ $teal: #2a8b83;
      }
      
      .title{
-        color: $teal;
+        color: $primaryColor;
         font-family: $fontFamily;
         font-weight: lighter;
         font-size: 1.2rem;
@@ -144,8 +141,9 @@ $teal: #2a8b83;
 
 .card{
     height: 15rem;
+    background: white;
     position: relative;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     margin: auto;
     width: 100%;
     border-radius: 8px;
@@ -162,6 +160,7 @@ $teal: #2a8b83;
         &{
             height: 17rem;
             margin: 1.3rem 0;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
         }
     }   
 
@@ -187,6 +186,7 @@ $teal: #2a8b83;
         width: 100%;
         height: 30%;
         background: $secondaryColor;
+        //background: white;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
         padding: 15px;
@@ -203,6 +203,7 @@ $teal: #2a8b83;
             font-size: .9rem;
             letter-spacing: .09rem;
             color: white;
+            //color: $secondaryColor;
            
 
         }
@@ -279,7 +280,7 @@ $teal: #2a8b83;
     gap: 1rem;
     padding: 2%;
     margin: 1% 0;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 
     cursor: pointer;
     
