@@ -14,13 +14,15 @@ $border: 1px solid black;
   }
 #contact{
     
-    //height: 100vh;
     padding-top: 3rem;
     position: relative;
-    top: 90rem;
+    top: 30rem;
     background: $secondaryColor;
     @media only screen and (max-width: 800px) {
-        top:180rem;
+        top: 200rem;
+    }
+    @media only screen and (max-width: 600px){
+        top: 185rem;
     }
     .contact_formIntro{
         margin-top: 4rem;
