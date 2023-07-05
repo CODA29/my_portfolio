@@ -561,6 +561,15 @@
     padding-top: 2rem;
   }
 }
+.active.facts_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.active.facts_card p {
+  overflow-y: unset;
+}
 
 .active .caption {
   display: none;
@@ -612,11 +621,6 @@
   display: none;
 }
 
-#social-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #social-card h1 {
   border: none;
   display: none;
@@ -632,23 +636,23 @@
   font-family: "Urbanist", sans-serif;
   letter-spacing: 0.1rem;
 }
-#social-card .location::after {
-  content: "";
-  margin-left: 3rem;
-}
-#social-card .location::before {
-  content: "";
-  margin-right: 3rem;
-}
 
 .active .social-links {
   margin-top: 1.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   gap: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+  .active .social-links {
+    height: 100%;
+  }
 }
 .active .social-links a .fa-brands {
   color: #176393;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 .active .social-links a .fa-brands:hover {
   color: #4197cd;

@@ -298,6 +298,18 @@ $teal: #2a8b83;
             
         }
     }
+    // this is a unique setting for the random facts card
+    &.facts_card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p{
+            overflow-y: unset;
+        }
+        
+    }
 }
 
 
@@ -353,13 +365,12 @@ $teal: #2a8b83;
     display: none;
 }
 
+
 // this is a unique setting for the link up card
 
 #social-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    //overflow-y:scroll;
+    
+    
     h1{
         border: none;
         display: none;
@@ -377,28 +388,28 @@ $teal: #2a8b83;
         }
 
     }
-    .location{
-       
-        &::after{
-            content: "";
-            margin-left: 3rem;
-        }
-        &::before{
-            content: "";
-            margin-right: 3rem;
-           
-        }
-    }
+    
     
 }
 .active .social-links{
     margin-top: 1.5rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     gap: 1.5rem;
+    @media only screen and (max-width: 800px) {
+        
+        &{
+            height: 100%;
+        }
+    
+    }
     a{
         .fa-brands{
             color:#176393;
-            font-size: 1.3rem;
+            font-size: 2rem;
+
             &:hover{
                 color:#4197cd; 
             }
