@@ -682,12 +682,11 @@
   height: 100vh;
   position: absolute;
   padding: 30px;
-  top: 135rem;
+  top: 130rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  z-index: -1;
 }
 @media only screen and (max-width: 800px) {
   #project {
@@ -817,7 +816,7 @@
 #contact {
   padding-top: 3rem;
   position: relative;
-  top: 95rem;
+  top: 90rem;
   background: #3e4447;
 }
 @media only screen and (max-width: 800px) {
