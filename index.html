@@ -366,7 +366,7 @@
 
 
         <div class="copyright">
-            <p> Dagmawi Megra © 2023 </p>
+            <p> Dagmawi Megra © <span id="year"></span></p>
         </div>
           
     </section>
@@ -375,6 +375,15 @@
     <!-- scroll up button -->
     <button onclick="topFunction()" id="scrollBtn" title="Go to top"> <i class="fa-solid fa-circle-chevron-up fa-bounce fa-5x"></i> </button>
    
+    <!--Dynamic year tracker-->
+    <script>
+    
+        var date = new Date();
+        document.getElementById("year").innerHTML=date.getFullYear();
+       
+    </script>
+
+
     <!-- gsap cdn for animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
