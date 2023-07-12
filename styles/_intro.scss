@@ -99,6 +99,9 @@ $font-family: "Special Elite", cursive;
         //color: $teal;
         color: $primaryColor;
       }
+      @media only screen and (max-width: 900px){
+        font-size: 1.5rem;
+      }
     }
   }
 }

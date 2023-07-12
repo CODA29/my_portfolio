@@ -86,6 +86,11 @@
 .introContainer p #hi #nme {
   color: #be651c;
 }
+@media only screen and (max-width: 900px) {
+  .introContainer p #hi {
+    font-size: 1.5rem;
+  }
+}
 
 @keyframes animate1 {
   100% {
@@ -744,7 +749,7 @@
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   gap: 5rem;
 }
 @media only screen and (max-width: 800px) {
