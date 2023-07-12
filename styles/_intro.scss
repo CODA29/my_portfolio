@@ -61,7 +61,7 @@ $font-family: "Special Elite", cursive;
 
 //Intro and container
 .introContainer {
-  width: 400px;
+  width: 450px;
   position: absolute;
   left: 0;
   padding: 0 5%;
@@ -83,18 +83,18 @@ $font-family: "Special Elite", cursive;
     font-family: $font-family;
     letter-spacing: 0.1rem;
     color: $secondaryColor;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.2rem;
     padding-top: 2rem;
     
     @media only screen and (max-width: 900px) {
       & {
         text-align: center;
-            
+        font-size: 1.2rem;
       }
     }
     #hi {
-      font-size: 1.6rem;
+      font-size: 2rem;
       #nme {
         //color: $teal;
         color: $primaryColor;
@@ -136,7 +136,7 @@ $font-family: "Special Elite", cursive;
 
   img {
     //width: 300px;
-    width: 18rem;
+    width: 27rem;
     @media only screen and (max-width: 900px) {
       & {
         max-width: 250px;

@@ -185,7 +185,7 @@ $teal: #2a8b83;
     .caption{
         width: 100%;
         height: 30%;
-        background: white;
+        background: $primaryColor;
         //background: white;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -202,7 +202,7 @@ $teal: #2a8b83;
             font-weight: lighter;
             font-size: .9rem;
             letter-spacing: .09rem;
-            color: $secondaryColor;
+            color: white;
             //color: $secondaryColor;
            
 
