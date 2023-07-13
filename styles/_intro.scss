@@ -1,5 +1,8 @@
 //variables
-$primaryColor: #be651c;
+//$primaryColor: #be651c;
+//$primaryColor: #7a3b07;
+$primaryColor: #9a5204;
+$primaryLight: #dbaa7e;
 $secondaryColor: #3e4447;
 $thirdColor: #d4d9dc;
 $teal: #2a8b83;
@@ -30,13 +33,15 @@ $font-family: "Special Elite", cursive;
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 205px;
+  //height: 205px;
+  height: 100px;
 }
 
 .tilt .shape-fill {
-  //fill: $primaryColor;
-  fill: $secondaryColor;
+  fill: $primaryColor;
+  //fill: $secondaryColor;
   //fill: white;
+  //fill: $thirdColor;
 }
 
 //main intro section
@@ -78,6 +83,11 @@ $font-family: "Special Elite", cursive;
       
     }
   }
+  @media only screen and (min-width: 2000px) {
+    & {
+      width: 500px;
+    }
+  }
   p {
     //width: 380px;
     font-family: $font-family;
@@ -93,14 +103,24 @@ $font-family: "Special Elite", cursive;
         font-size: 1.2rem;
       }
     }
+    @media only screen and (min-width: 2000px) {
+      & {
+        font-size: 2rem;
+      }
+    }
     #hi {
-      font-size: 2rem;
+      font-size: 1.9rem;
       #nme {
         //color: $teal;
         color: $primaryColor;
       }
       @media only screen and (max-width: 900px){
         font-size: 1.5rem;
+      }
+      @media only screen and (min-width: 2000px) {
+        & {
+          font-size: 2.5rem;
+        }
       }
     }
   }
@@ -139,21 +159,29 @@ $font-family: "Special Elite", cursive;
 
   img {
     //width: 300px;
-    width: 27rem;
+    width: 20rem;
+    z-index: -1;
     @media only screen and (max-width: 900px) {
       & {
         max-width: 250px;
       }
     }
+    @media only screen and (min-width: 2000px) {
+      & {
+        width: 27rem;
+      }
+    }
   }
   a{
+
     text-decoration: none!important;
+    cursor: pointer;
   }
   #msg_wrap {
     position: relative;
     margin-left: auto;
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +193,7 @@ $font-family: "Special Elite", cursive;
   }
 
   .circle {
+    
     position: absolute;
     border-radius: 1em;
     //border: 2px dashed white;
@@ -174,7 +203,7 @@ $font-family: "Special Elite", cursive;
     //transition: 6s;
     width: 5rem;
     height: 4rem;
-    padding: 1.6em;
+    //padding: 1.6em;
     //-webkit-animation: spin 20s linear infinite;
     //animation: spin 20s linear infinite;
     @media only screen and (max-width: 900px) {
@@ -182,6 +211,10 @@ $font-family: "Special Elite", cursive;
       height: 3.5rem;
       //border: 1px dashed #ffffff;
       transition: 3s;
+    }
+    &:hover{
+      background: $primaryLight;
+      transition: 1s;
     }
   }
 
