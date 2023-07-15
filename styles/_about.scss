@@ -164,7 +164,8 @@ $teal: #2a8b83;
     grid-column: span 3;
     
     &:hover{
-        border-bottom: 5px solid $primaryColor;
+       
+        border-top: 5px solid $primaryColor;
         
     }
    
@@ -177,7 +178,10 @@ $teal: #2a8b83;
             box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
             border-bottom: unset;
         }
-        
+        &:hover{
+            border-top: unset;
+            
+        }
     }   
 
 
@@ -211,6 +215,7 @@ $teal: #2a8b83;
         display: flex;
         align-items: center;
         justify-content: center;
+        
         @media only screen and (max-width: 800px) {
             background: $secondaryColor;
         }

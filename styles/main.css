@@ -507,7 +507,7 @@
   grid-column: span 3;
 }
 .card:hover {
-  border-bottom: 5px solid #9a5204;
+  border-top: 5px solid #9a5204;
 }
 @media only screen and (max-width: 800px) {
   .card {
@@ -515,6 +515,9 @@
     margin: 1.3rem 0;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     border-bottom: unset;
+  }
+  .card:hover {
+    border-top: unset;
   }
 }
 .card h3 {
