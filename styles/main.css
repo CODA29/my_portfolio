@@ -197,7 +197,6 @@
 }
 .imgContainer .circle:hover {
   background: #dbaa7e;
-  transition: 1s;
 }
 @keyframes spin {
   0% {
@@ -506,6 +505,9 @@
   flex-direction: column;
   align-items: center;
   grid-column: span 3;
+}
+.card:hover {
+  border-bottom: 3px solid #9a5204;
 }
 @media only screen and (max-width: 800px) {
   .card {
