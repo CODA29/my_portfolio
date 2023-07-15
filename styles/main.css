@@ -516,6 +516,9 @@
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     border-bottom: unset;
   }
+  .card:hover {
+    border-bottom: unset;
+  }
 }
 .card h3 {
   font-size: 3rem;
