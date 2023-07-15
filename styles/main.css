@@ -507,7 +507,7 @@
   grid-column: span 3;
 }
 .card:hover {
-  border-bottom: 3px solid #9a5204;
+  border-bottom: 5px solid #9a5204;
 }
 @media only screen and (max-width: 800px) {
   .card {
