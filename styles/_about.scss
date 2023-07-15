@@ -216,6 +216,7 @@ $teal: #2a8b83;
         align-items: center;
         justify-content: center;
         
+        
         @media only screen and (max-width: 800px) {
             background: $secondaryColor;
         }
@@ -226,6 +227,7 @@ $teal: #2a8b83;
             font-size: .9rem;
             letter-spacing: .09rem;   
             color: $primaryColor;
+            
             @media only screen and (max-width: 800px) {
                 color: white;
             }
