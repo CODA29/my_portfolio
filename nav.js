@@ -37,6 +37,17 @@ function myFunction() {
     
 }
 
+window.addEventListener('resize', function(){
+  if(window.innerWidth > 800){
+    nav.classList.remove('clicked');
+    burger.className = "fa-solid fa-bars-staggered";
+    nav.style.backgroundColor = "white";
+    home.innerHTML ="HOME";
+
+    
+  }
+})
+
 document.onclick = function(e){
     if(e.target.className == 'links'|| e.target.className == 'logo' || e.target.className == 'fa-solid fa-house'){
         nav.classList.remove('clicked');
