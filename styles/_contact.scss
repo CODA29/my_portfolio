@@ -21,10 +21,10 @@ $border: 1px solid black;
     top: 30rem;
     background: $secondaryColor;
     @media only screen and (max-width: 800px) {
-        top: 215rem;
+        top: 150rem;
     }
     @media only screen and (max-width: 600px){
-        top: 195rem;
+       // top: 195rem;
     }
     .contact_formIntro{
         margin-top: 4rem;
