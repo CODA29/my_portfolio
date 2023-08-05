@@ -75,7 +75,7 @@
   font-family: "Special Elite", cursive;
   letter-spacing: 0.1rem;
   color: #3e4447;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.2rem;
   padding-top: 2rem;
 }
@@ -91,7 +91,7 @@
   }
 }
 .introContainer p #hi {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
 }
 .introContainer p #hi #nme {
   color: #9a5204;
@@ -148,7 +148,7 @@
   }
 }
 .imgContainer img {
-  width: 20rem;
+  width: 23rem;
   z-index: -1;
 }
 @media only screen and (max-width: 900px) {
@@ -194,9 +194,6 @@
     height: 3.5rem;
     transition: 3s;
   }
-}
-.imgContainer .circle:hover {
-  background: #dbaa7e;
 }
 @keyframes spin {
   0% {
@@ -249,6 +246,7 @@
   justify-content: space-between;
   padding: 2rem;
   z-index: 99;
+  border-bottom: 1px solid #f7f6f6;
 }
 .nav .logoContainer {
   opacity: 0;
@@ -259,7 +257,7 @@
 .nav .logoContainer .logo {
   color: #9a5204;
   font-family: "Special Elite", cursive;
-  font-size: 2.2rem;
+  font-size: 2rem;
   letter-spacing: 0.08rem;
   text-decoration: none;
   position: relative;
