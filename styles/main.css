@@ -45,7 +45,7 @@
     max-width: 600px;
     flex-direction: column-reverse;
     margin-top: 10%;
-    top: 28rem;
+    top: 32rem;
   }
 }
 
@@ -100,7 +100,7 @@
 }
 @media only screen and (max-width: 900px) {
   .introContainer p #hi {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -513,9 +513,7 @@
 
 .card {
   height: 15rem;
-  background: white;
   position: relative;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   margin: auto;
   width: 100%;
   border-radius: 8px;
@@ -526,7 +524,7 @@
   grid-column: span 3;
 }
 .card:hover {
-  border-top: 5px solid rgba(148, 71, 19, 0.9098039216);
+  border: 1px solid rgba(148, 71, 19, 0.9098039216);
 }
 @media only screen and (max-width: 800px) {
   .card {
@@ -536,7 +534,7 @@
     border-bottom: unset;
   }
   .card:hover {
-    border-top: unset;
+    border: unset;
   }
 }
 .card h3 {
@@ -621,7 +619,6 @@
   gap: 1rem;
   padding: 2%;
   margin: 1% 0;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   align-items: unset;
 }

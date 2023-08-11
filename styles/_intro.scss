@@ -62,7 +62,7 @@ $font-family: 'Vollkorn', serif;
       max-width: 600px;
       flex-direction: column-reverse;
       margin-top: 10%;
-      top: 28rem;
+      top: 32rem;
     }
   }
 }
@@ -124,7 +124,7 @@ $font-family: 'Vollkorn', serif;
         color: $primaryColor;
       }
       @media only screen and (max-width: 900px){
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
       @media only screen and (min-width: 2000px) {
         & {
