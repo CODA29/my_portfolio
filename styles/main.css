@@ -766,7 +766,7 @@
 }
 @media only screen and (max-width: 800px) {
   #project {
-    top: 155rem;
+    top: 147rem;
     position: absolute;
     flex-direction: column;
     height: unset;
@@ -796,7 +796,7 @@
 @media only screen and (max-width: 800px) {
   #project .title2 {
     display: block;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
 }
 #project .projects .pro_card {
