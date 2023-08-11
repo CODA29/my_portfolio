@@ -1,13 +1,15 @@
 //variables
 //$primaryColor: #be651c;
 //$primaryColor: #7a3b07;
-$primaryColor: #9a5204;
+//$primaryColor: #9a5204;
+$primaryColor: #944713e8;
 $primaryLight: #dbaa7e;
 $secondaryColor: #3e4447;
 $thirdColor: #d4d9dc;
 $teal: #2a8b83;
 $border: 1px solid black;
-$font-family: "Special Elite", cursive;
+//$font-family: 'Spectral', serif;
+$font-family: 'Vollkorn', serif;
 
 * {
   box-sizing: border-box;
@@ -49,10 +51,11 @@ $font-family: "Special Elite", cursive;
   display: flex;
   align-items: center;
   position: absolute;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   left: 0;
   right: 0;
+  
   
   @media only screen and (max-width: 800px) {
     & {
@@ -66,7 +69,7 @@ $font-family: "Special Elite", cursive;
 
 //Intro and container
 .introContainer {
-  width: 450px;
+  width: 600px;
   position: absolute;
   left: 0;
   padding: 0 5%;
@@ -91,17 +94,19 @@ $font-family: "Special Elite", cursive;
   }
   p {
     //width: 380px;
+
     font-family: $font-family;
     letter-spacing: 0.1rem;
-    color: $secondaryColor;
-    font-size: 1.4rem;
+    color:$secondaryColor;
+    //color: #888888; 
+    font-size: 1.4rem; 
     line-height: 2.2rem;
     padding-top: 2rem;
     
     @media only screen and (max-width: 900px) {
       & {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
     @media only screen and (min-width: 2000px) {
@@ -110,13 +115,16 @@ $font-family: "Special Elite", cursive;
       }
     }
     #hi {
-      font-size: 2rem;
+      font-size: 3rem;
+      color: $secondaryColor;
+      font-weight: 700;
+      
       #nme {
         //color: $teal;
         color: $primaryColor;
       }
       @media only screen and (max-width: 900px){
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
       @media only screen and (min-width: 2000px) {
         & {
@@ -160,7 +168,7 @@ $font-family: "Special Elite", cursive;
 
   img {
     //width: 300px;
-    width: 20rem;
+    width: 22rem;
     z-index: -1;
     @media only screen and (max-width: 900px) {
       & {
@@ -188,8 +196,8 @@ $font-family: "Special Elite", cursive;
     justify-content: center;
     
     @media only screen and (max-width: 900px) {
-      width: 3rem;
-      height: 3rem;
+      width: 5rem;
+      height: 4rem;
     }
   }
 
@@ -202,14 +210,14 @@ $font-family: "Special Elite", cursive;
     //background: $teal;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     //transition: 6s;
-    width: 5rem;
+    width: 7rem;
     height: 4rem;
     //padding: 1.6em;
     //-webkit-animation: spin 20s linear infinite;
     //animation: spin 20s linear infinite;
     @media only screen and (max-width: 900px) {
-      width: 3.5rem;
-      height: 3.5rem;
+      width: 6rem;
+      height: 3rem;
       //border: 1px dashed #ffffff;
       transition: 3s;
     }
@@ -258,11 +266,12 @@ $font-family: "Special Elite", cursive;
     text-align: center;
     font-family: $font-family;
     font-weight: lighter;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: white;
+    letter-spacing: .1rem;
     
     @media only screen and (max-width: 900px) {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
   }
 }

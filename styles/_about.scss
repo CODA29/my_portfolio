@@ -1,10 +1,11 @@
 // variables
 //$primaryColor: #be651c;
-$primaryColor: #9a5204;
+$primaryColor: #944713e8;
 $primaryLight: #dbaa7e;
 $secondaryColor: #3e4447;
 $thirdColor: #d4d9dc;
-$fontFamily : 'Special Elite', cursive;
+//$fontFamily : 'Special Elite', cursive;
+$fontFamily: 'Vollkorn', serif;
 $secondFontFamily: Georgia, 'Times New Roman', Times, serif;
 $font-family2: 'Urbanist', sans-serif;
 $teal: #2a8b83;
@@ -16,6 +17,10 @@ $teal: #2a8b83;
   }
 #about{
     //background: $secondaryColor;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    max-width: 1500px;
+    margin: auto;
     position: relative;
     height: 100vh;
     display: flex;
@@ -90,6 +95,8 @@ $teal: #2a8b83;
             flex-direction: column;
             top: 55rem;
             height: unset;
+            border-bottom: none;
+            border-top: none;
           
         }
         
@@ -99,7 +106,7 @@ $teal: #2a8b83;
         color: $primaryColor;
         font-family: $fontFamily;
         font-weight: lighter;
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
         @media only screen and (max-width: 800px) {
@@ -112,15 +119,15 @@ $teal: #2a8b83;
     .title2{
         color: $primaryColor;
         font-family: $fontFamily;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: lighter;
         display: none;
         @media only screen and (max-width: 800px) {
             &{
                 display: block;
-                padding-top: 45px;
+                //padding-top: 45px;
                 position: absolute;
-                top: 9rem;
+                top: 3rem;
             }
         }
     }
@@ -133,7 +140,7 @@ $teal: #2a8b83;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 30px;
     height: 70%;
-    width: 60%;
+    width: 70%;
     margin: auto;
     //margin-bottom: 3rem;
    

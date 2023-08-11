@@ -1,8 +1,9 @@
 $border: 1px solid black;
-$fontFamily : 'Special Elite', cursive;
+//$fontFamily : 'Special Elite', cursive;
+$fontFamily: 'Vollkorn', serif;
 $secondFontFamily: Georgia, 'Times New Roman', Times, serif;
 //$primaryColor: #be651c;
-$primaryColor: #9a5204;
+$primaryColor: #944713e8;
 $primaryLight: #dbaa7e;
 $secondaryColor: #3e4447;
 $thirdColor: #d4d9dc;
@@ -16,6 +17,8 @@ $teal: #2a8b83;
 #project{
     //height: 60vh;
     //background: $thirdColor;
+    max-width: 1500px;
+    margin: auto;
     position: relative;
     padding: 30px;
     top: 7rem;
@@ -32,6 +35,7 @@ $teal: #2a8b83;
         flex-direction: column;
         height: unset;
        
+       
         
        } 
     }
@@ -40,7 +44,7 @@ $teal: #2a8b83;
     .title{
         color: $primaryColor;
         font-family: $fontFamily;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: lighter;
         float: right;
         display: flex;
@@ -55,7 +59,7 @@ $teal: #2a8b83;
     .title2{
         color: $primaryColor;
         font-family: $fontFamily;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: lighter;
         display: none;
         @media only screen and (max-width: 800px) {
@@ -73,7 +77,7 @@ $teal: #2a8b83;
         
         .pro_card{
             //background: white;
-            width: 90%;
+            
             margin: auto;
             display: flex; 
             justify-content: center;
@@ -121,7 +125,7 @@ $teal: #2a8b83;
                 h2{
                     color: $secondaryColor;
                     font-family: $fontFamily;
-                    font-weight: lighter;
+                    font-weight: 900;
                     font-size: 2rem;
                     @media only screen and (max-width: 800px) {
                         font-size: 1.5rem;
@@ -133,7 +137,6 @@ $teal: #2a8b83;
                     line-height: 2rem;
                     color: $secondaryColor;
                    
-                    
                 }
                 button{
                     //background: $secondaryColor;

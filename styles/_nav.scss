@@ -1,12 +1,13 @@
 // Variables
 //$primaryColor:#be651c;
-$primaryColor: #9a5204;
+//$primaryColor: #f29531;
+$primaryColor: #944713e8;
 $primaryLight: #dbaa7e;
 $secondaryColor:#3e4447;
 $teal: #2a8b83;
 $thirdColor: #d4d9dc;
-$fontFamily : 'Special Elite', cursive;
-
+$font-family: 'Spectral', serif;
+$font-family2: 'Vollkorn', serif;
 
 * {
     box-sizing: border-box;
@@ -21,7 +22,7 @@ $fontFamily : 'Special Elite', cursive;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 2rem;
     z-index: 99;
     border-bottom: 1px solid  #f7f6f6;
@@ -37,12 +38,19 @@ $fontFamily : 'Special Elite', cursive;
         -webkit-animation: animate1 1.2s ease .5s forwards;
         .logo{
             color: $primaryColor;
-            font-family: 'Special Elite', cursive;
+            font-family: $font-family2;
             font-size: 2rem;
             letter-spacing: .08rem;
             text-decoration: none;
             position: relative;
             transition: 0.5s;
+
+
+            img{
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+            }
         
             @media only screen and (max-width: 800px) {
                 font-size: 23px;
@@ -81,7 +89,7 @@ $fontFamily : 'Special Elite', cursive;
                 color: $secondaryColor; 
                 font-size: .9rem;
                 text-decoration: none;
-                font-family: 'Special Elite', cursive;
+                font-family: $font-family;
                 
                 @media only screen and (max-width: 800px){
                     &{
@@ -135,6 +143,9 @@ $fontFamily : 'Special Elite', cursive;
             }
             .logo{
                 color: $primaryLight;
+                img{
+                    display: none;
+                }
             }
             
             

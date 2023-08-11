@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   position: absolute;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   left: 0;
   right: 0;
@@ -50,7 +50,7 @@
 }
 
 .introContainer {
-  width: 450px;
+  width: 600px;
   position: absolute;
   left: 0;
   padding: 0 5%;
@@ -72,7 +72,7 @@
   }
 }
 .introContainer p {
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   letter-spacing: 0.1rem;
   color: #3e4447;
   font-size: 1.4rem;
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 900px) {
   .introContainer p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -91,14 +91,16 @@
   }
 }
 .introContainer p #hi {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #3e4447;
+  font-weight: 700;
 }
 .introContainer p #hi #nme {
-  color: #9a5204;
+  color: rgba(148, 71, 19, 0.9098039216);
 }
 @media only screen and (max-width: 900px) {
   .introContainer p #hi {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -148,7 +150,7 @@
   }
 }
 .imgContainer img {
-  width: 20rem;
+  width: 22rem;
   z-index: -1;
 }
 @media only screen and (max-width: 900px) {
@@ -176,22 +178,22 @@
 }
 @media only screen and (max-width: 900px) {
   .imgContainer #msg_wrap {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 4rem;
   }
 }
 .imgContainer .circle {
   position: absolute;
   border-radius: 1em;
-  background: #9a5204;
+  background: rgba(148, 71, 19, 0.9098039216);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  width: 5rem;
+  width: 7rem;
   height: 4rem;
 }
 @media only screen and (max-width: 900px) {
   .imgContainer .circle {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 6rem;
+    height: 3rem;
     transition: 3s;
   }
 }
@@ -207,14 +209,15 @@
   display: block;
   z-index: 1;
   text-align: center;
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   font-weight: lighter;
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: white;
+  letter-spacing: 0.1rem;
 }
 @media only screen and (max-width: 900px) {
   .imgContainer .show_msg {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -243,7 +246,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 2rem;
   z-index: 99;
   border-bottom: 1px solid #f7f6f6;
@@ -255,13 +258,18 @@
   -webkit-animation: animate1 1.2s ease 0.5s forwards;
 }
 .nav .logoContainer .logo {
-  color: #9a5204;
-  font-family: "Special Elite", cursive;
+  color: rgba(148, 71, 19, 0.9098039216);
+  font-family: "Vollkorn", serif;
   font-size: 2rem;
   letter-spacing: 0.08rem;
   text-decoration: none;
   position: relative;
   transition: 0.5s;
+}
+.nav .logoContainer .logo img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 800px) {
   .nav .logoContainer .logo {
@@ -281,7 +289,7 @@
 }
 .nav .pages .nav-items .activeNav {
   height: 3px;
-  background: #9a5204;
+  background: rgba(148, 71, 19, 0.9098039216);
   border-radius: 1rem;
   position: absolute;
   left: 0;
@@ -292,7 +300,7 @@
   color: #3e4447;
   font-size: 0.9rem;
   text-decoration: none;
-  font-family: "Special Elite", cursive;
+  font-family: "Spectral", serif;
 }
 @media only screen and (max-width: 800px) {
   .nav .pages .nav-items a {
@@ -304,7 +312,7 @@
 }
 @media only screen and (max-width: 800px) {
   .nav .burger {
-    color: #9a5204;
+    color: rgba(148, 71, 19, 0.9098039216);
     display: block;
     font-size: 23px;
   }
@@ -328,6 +336,9 @@
   .nav.clicked .logo {
     color: #dbaa7e;
   }
+  .nav.clicked .logo img {
+    display: none;
+  }
   .nav.clicked .pages {
     flex-direction: column;
     justify-items: center;
@@ -348,7 +359,7 @@
     font-size: 18px;
   }
   .nav.clicked .pages .nav-items a .fa-solid:hover {
-    color: #9a5204;
+    color: rgba(148, 71, 19, 0.9098039216);
   }
   .nav.clicked .pages .nav-items .activeNav {
     display: none;
@@ -378,6 +389,10 @@
 }
 
 #about {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  max-width: 1500px;
+  margin: auto;
   position: relative;
   height: 100vh;
   display: flex;
@@ -411,7 +426,7 @@
 }
 @media only screen and (max-width: 800px) {
   #about .top_arrow .shape-fill {
-    fill: #9a5204;
+    fill: rgba(148, 71, 19, 0.9098039216);
   }
 }
 #about .bottom_arrow {
@@ -442,13 +457,15 @@
     flex-direction: column;
     top: 55rem;
     height: unset;
+    border-bottom: none;
+    border-top: none;
   }
 }
 #about .title {
-  color: #9a5204;
-  font-family: "Special Elite", cursive;
+  color: rgba(148, 71, 19, 0.9098039216);
+  font-family: "Vollkorn", serif;
   font-weight: lighter;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -458,18 +475,17 @@
   }
 }
 #about .title2 {
-  color: #9a5204;
-  font-family: "Special Elite", cursive;
-  font-size: 1.5rem;
+  color: rgba(148, 71, 19, 0.9098039216);
+  font-family: "Vollkorn", serif;
+  font-size: 1rem;
   font-weight: lighter;
   display: none;
 }
 @media only screen and (max-width: 800px) {
   #about .title2 {
     display: block;
-    padding-top: 45px;
     position: absolute;
-    top: 9rem;
+    top: 3rem;
   }
 }
 
@@ -478,7 +494,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 30px;
   height: 70%;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 @media only screen and (max-width: 800px) {
@@ -505,7 +521,7 @@
   grid-column: span 3;
 }
 .card:hover {
-  border-top: 5px solid #9a5204;
+  border-top: 5px solid rgba(148, 71, 19, 0.9098039216);
 }
 @media only screen and (max-width: 800px) {
   .card {
@@ -551,11 +567,11 @@
   }
 }
 .card .caption h2 {
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   font-weight: lighter;
   font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  color: #9a5204;
+  color: rgba(148, 71, 19, 0.9098039216);
 }
 @media only screen and (max-width: 800px) {
   .card .caption h2 {
@@ -658,9 +674,9 @@
 }
 .active .skills h4 {
   text-align: center;
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   font-weight: lighter;
-  color: #9a5204;
+  color: rgba(148, 71, 19, 0.9098039216);
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 800px) {
@@ -703,7 +719,7 @@
   }
 }
 .active .social-links a .fa-brands {
-  color: #9a5204;
+  color: rgba(148, 71, 19, 0.9098039216);
   font-size: 2rem;
 }
 .active .social-links a .fa-brands:hover {
@@ -735,6 +751,8 @@
 }
 
 #project {
+  max-width: 1500px;
+  margin: auto;
   position: relative;
   padding: 30px;
   top: 7rem;
@@ -753,9 +771,9 @@
   }
 }
 #project .title {
-  color: #9a5204;
-  font-family: "Special Elite", cursive;
-  font-size: 1.2rem;
+  color: rgba(148, 71, 19, 0.9098039216);
+  font-family: "Vollkorn", serif;
+  font-size: 1rem;
   font-weight: lighter;
   float: right;
   display: flex;
@@ -767,9 +785,9 @@
   }
 }
 #project .title2 {
-  color: #9a5204;
-  font-family: "Special Elite", cursive;
-  font-size: 1.5rem;
+  color: rgba(148, 71, 19, 0.9098039216);
+  font-family: "Vollkorn", serif;
+  font-size: 1rem;
   font-weight: lighter;
   display: none;
 }
@@ -780,7 +798,6 @@
   }
 }
 #project .projects .pro_card {
-  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -820,8 +837,8 @@
 }
 #project .projects .pro_card .child2 h2 {
   color: #3e4447;
-  font-family: "Special Elite", cursive;
-  font-weight: lighter;
+  font-family: "Vollkorn", serif;
+  font-weight: 900;
   font-size: 2rem;
 }
 @media only screen and (max-width: 800px) {
@@ -836,7 +853,7 @@
   color: #3e4447;
 }
 #project .projects .pro_card .child2 button {
-  background: #9a5204;
+  background: rgba(148, 71, 19, 0.9098039216);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   color: white;
@@ -894,7 +911,7 @@
 }
 #contact .contact_formIntro h2 {
   text-align: center;
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   font-weight: lighter;
   color: white;
   font-size: 1.7rem;
@@ -976,10 +993,10 @@
   border: none;
 }
 #contact .contact_form .contact_formPart .btn {
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   font-weight: lighter;
   padding: 1.2rem;
-  background: #9a5204;
+  background: rgba(148, 71, 19, 0.9098039216);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   color: white;
   font-size: 1rem;
@@ -997,7 +1014,7 @@
   transition: 1s;
 }
 #contact .contact_form .contact_formPart label {
-  font-family: "Special Elite", cursive;
+  font-family: "Vollkorn", serif;
   font-size: 1rem;
   color: white;
 }
@@ -1061,7 +1078,7 @@ body {
   position: fixed;
   bottom: 30px;
   right: 3rem;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   cursor: pointer;
   z-index: 99;
 }
@@ -1073,7 +1090,7 @@ body {
   --fa-bounce-land-scale-x: 1;
   --fa-bounce-land-scale-y: 1;
   --fa-bounce-rebound: 0;
-  color: #9a5204;
+  color: rgba(148, 71, 19, 0.9098039216);
 }
 @media only screen and (max-width: 800px) {
   #scrollBtn {
