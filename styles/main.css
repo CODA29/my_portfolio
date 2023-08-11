@@ -1054,12 +1054,8 @@
   padding: 0;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .landingPage {
-  background-image: url("../image/background.WebP");
+  background: url("../image/background.WebP");
   background-position: top;
   background-repeat: no-repeat;
   width: 100%;
@@ -1072,6 +1068,7 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .landingPage {
+    background: url("../image/background.WebP");
     height: unset;
   }
 }
