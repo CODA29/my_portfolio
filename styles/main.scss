@@ -35,7 +35,7 @@ $font-family2: 'Urbanist', sans-serif;
     position: relative;
     z-index: 2;
     @media only screen and (max-width: 800px) {
-        background: url('../image/background.WebP') ;
+        //background: url('../image/background.WebP');
         height: unset;
     }
   
