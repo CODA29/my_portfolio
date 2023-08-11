@@ -74,6 +74,7 @@ $font-family: "Special Elite", cursive;
   transform: translateY(50px);
   animation: animate1 2s ease 2.5s forwards;
   -webkit-animation: animate1 2s ease 2.5s forwards;
+  
   @media only screen and (max-width: 800px) {
     & {
       top: 40px;
