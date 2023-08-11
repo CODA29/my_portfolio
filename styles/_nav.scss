@@ -26,6 +26,9 @@ $font-family2: 'Vollkorn', serif;
     padding: 2rem;
     z-index: 99;
     border-bottom: 1px solid  #f7f6f6;
+    @media only screen and (max-width: 800px){
+        justify-content: space-between;
+    }
     
     
 
