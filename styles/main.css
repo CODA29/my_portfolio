@@ -24,11 +24,11 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 100px;
+  height: 150px;
 }
 
 .tilt .shape-fill {
-  fill: #9a5204;
+  fill: #3e4447;
 }
 
 .introWrapper {
@@ -91,7 +91,7 @@
   }
 }
 .introContainer p #hi {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 .introContainer p #hi #nme {
   color: #9a5204;
@@ -148,7 +148,7 @@
   }
 }
 .imgContainer img {
-  width: 23rem;
+  width: 20rem;
   z-index: -1;
 }
 @media only screen and (max-width: 900px) {
@@ -398,16 +398,16 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 40px;
+  height: 0px;
   transform: rotateY(180deg);
 }
 @media only screen and (max-width: 800px) {
   #about .top_arrow svg {
-    height: 99px;
+    height: 30px;
   }
 }
 #about .top_arrow .shape-fill {
-  fill: #9a5204;
+  fill: #3e4447;
 }
 @media only screen and (max-width: 800px) {
   #about .top_arrow .shape-fill {
@@ -435,10 +435,10 @@
 }
 #about .bottom_arrow .shape-fill {
   fill: #3e4447;
-  fill: #9a5204;
 }
 @media only screen and (max-width: 800px) {
   #about {
+    background: none;
     flex-direction: column;
     top: 55rem;
     height: unset;
@@ -737,7 +737,7 @@
 #project {
   position: relative;
   padding: 30px;
-  top: 17rem;
+  top: 7rem;
   display: flex;
   gap: 5rem;
   flex-direction: row-reverse;
@@ -881,7 +881,7 @@
 #contact {
   padding-top: 3rem;
   position: relative;
-  top: 30rem;
+  top: 7rem;
   background: #3e4447;
 }
 @media only screen and (max-width: 800px) {

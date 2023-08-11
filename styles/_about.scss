@@ -37,18 +37,18 @@ $teal: #2a8b83;
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
-        //height: 99px;
-        height: 40px;
+        height: 0px;
+       // height: 100px;
         transform: rotateY(180deg);
         @media only screen and (max-width: 800px) {
-            height: 99px;
+            height: 30px;
         }
     }
     
     .top_arrow .shape-fill {
         //fill: $primaryColor;
-        //fill: $thirdColor;
-        fill: $primaryColor;
+        fill: $secondaryColor;
+        //fill: $primaryLight;
         @media only screen and (max-width: 800px) {
            fill: $primaryColor;
         }
@@ -77,7 +77,8 @@ $teal: #2a8b83;
     .bottom_arrow .shape-fill {
        
         fill: $secondaryColor;
-        fill: $primaryColor;
+       // fill: $primaryColor;
+       // fill: white;
         
     }
     
@@ -85,7 +86,7 @@ $teal: #2a8b83;
 
     @media only screen and (max-width: 800px) {
         &{
-           
+            background: none;
             flex-direction: column;
             top: 55rem;
             height: unset;

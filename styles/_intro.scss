@@ -34,12 +34,12 @@ $font-family: "Special Elite", cursive;
   display: block;
   width: calc(100% + 1.3px);
   //height: 205px;
-  height: 100px;
+  height: 150px;
 }
 
 .tilt .shape-fill {
-  fill: $primaryColor;
-  //fill: $secondaryColor;
+  //fill: $primaryColor;
+  fill: $secondaryColor;
   //fill: white;
   //fill: $thirdColor;
 }
@@ -110,7 +110,7 @@ $font-family: "Special Elite", cursive;
       }
     }
     #hi {
-      font-size: 2.2rem;
+      font-size: 2rem;
       #nme {
         //color: $teal;
         color: $primaryColor;
@@ -160,7 +160,7 @@ $font-family: "Special Elite", cursive;
 
   img {
     //width: 300px;
-    width: 23rem;
+    width: 20rem;
     z-index: -1;
     @media only screen and (max-width: 900px) {
       & {
