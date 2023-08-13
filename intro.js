@@ -1,8 +1,8 @@
 // Intro typing animation
 var typed = new Typed('#intro', {
 
-    strings: ["<span id='hi'> Hi, I'm  <span id='nme'> Dagmawi </span> 👋🏽 </span> <br><br> A  ^500 full-stack developer and ^1500 a lifelong learner. " ],
-    typeSpeed: 50,
+    strings: ["<span id='hi'> Hi, I'm  <span id='nme'> Dagmawi </span>  </span> <br><br> A  ^500 full-stack developer and ^500 a lifelong learner. " ],
+    typeSpeed: 30,
     backSpeed: 0,
 });
 
