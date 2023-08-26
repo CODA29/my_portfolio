@@ -23,11 +23,12 @@ $font-family2: 'Vollkorn', serif;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 2.5rem;
     z-index: 99;
     border-bottom: 1px solid  #f7f6f6;
     @media only screen and (max-width: 800px){
         justify-content: space-between;
+        padding: 2rem;
     }
     
     

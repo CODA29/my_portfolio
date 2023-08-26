@@ -145,7 +145,7 @@
   }
 }
 .imgContainer img {
-  width: 22rem;
+  width: 21rem;
   z-index: -1;
 }
 @media only screen and (max-width: 900px) {
@@ -242,13 +242,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 2.5rem;
   z-index: 99;
   border-bottom: 1px solid #f7f6f6;
 }
 @media only screen and (max-width: 800px) {
   .nav {
     justify-content: space-between;
+    padding: 2rem;
   }
 }
 .nav .logoContainer {
@@ -618,6 +619,8 @@
   gap: 1rem;
   padding: 2%;
   margin: 1% 0;
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
   cursor: pointer;
   align-items: unset;
 }
