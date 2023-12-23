@@ -91,7 +91,7 @@
   font-weight: 700;
 }
 .introContainer p #hi #nme {
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
 }
 @media only screen and (max-width: 900px) {
   .introContainer p #hi {
@@ -180,7 +180,7 @@
 .imgContainer .circle {
   position: absolute;
   border-radius: 1em;
-  background: rgba(148, 71, 19, 0.9098039216);
+  background: #9A463D;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   width: 7rem;
   height: 4rem;
@@ -431,7 +431,7 @@
 }
 @media only screen and (max-width: 800px) {
   #about .top_arrow .shape-fill {
-    fill: rgba(148, 71, 19, 0.9098039216);
+    fill: #9A463D;
   }
 }
 #about .bottom_arrow {
@@ -467,7 +467,7 @@
   }
 }
 #about .title {
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
   font-family: "Vollkorn", serif;
   font-weight: lighter;
   font-size: 1rem;
@@ -480,7 +480,7 @@
   }
 }
 #about .title2 {
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
   font-family: "Vollkorn", serif;
   font-size: 1rem;
   font-weight: lighter;
@@ -524,7 +524,7 @@
   grid-column: span 3;
 }
 .card:hover {
-  border: 1px solid rgba(148, 71, 19, 0.9098039216);
+  border: 1px solid #9A463D;
 }
 @media only screen and (max-width: 800px) {
   .card {
@@ -574,7 +574,7 @@
   font-weight: lighter;
   font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
 }
 @media only screen and (max-width: 800px) {
   .card .caption h2 {
@@ -621,8 +621,11 @@
   margin: 1% 0;
   border-bottom-left-radius: unset;
   border-bottom-right-radius: unset;
-  cursor: pointer;
+  cursor: w-resize;
   align-items: unset;
+}
+.active:hover {
+  border: unset;
 }
 @media only screen and (max-width: 800px) {
   .active {
@@ -679,7 +682,7 @@
   text-align: center;
   font-family: "Vollkorn", serif;
   font-weight: lighter;
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 800px) {
@@ -722,7 +725,7 @@
   }
 }
 .active .social-links a .fa-brands {
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
   font-size: 2rem;
 }
 .active .social-links a .fa-brands:hover {
@@ -774,7 +777,7 @@
   }
 }
 #project .title {
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
   font-family: "Vollkorn", serif;
   font-size: 1rem;
   font-weight: lighter;
@@ -788,7 +791,7 @@
   }
 }
 #project .title2 {
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
   font-family: "Vollkorn", serif;
   font-size: 1rem;
   font-weight: lighter;
@@ -855,7 +858,7 @@
   color: #6a6a6a;
 }
 #project .projects .pro_card .child2 button {
-  background: rgba(148, 71, 19, 0.9098039216);
+  background: #9A463D;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   color: white;
@@ -998,7 +1001,7 @@
   font-family: "Vollkorn", serif;
   font-weight: lighter;
   padding: 1.2rem;
-  background: rgba(148, 71, 19, 0.9098039216);
+  background: #9A463D;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   color: white;
   font-size: 1rem;
@@ -1091,7 +1094,7 @@
   --fa-bounce-land-scale-x: 1;
   --fa-bounce-land-scale-y: 1;
   --fa-bounce-rebound: 0;
-  color: rgba(148, 71, 19, 0.9098039216);
+  color: #9A463D;
 }
 @media only screen and (max-width: 800px) {
   #scrollBtn {

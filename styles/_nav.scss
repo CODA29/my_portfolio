@@ -16,6 +16,7 @@ $font-family2: 'Vollkorn', serif;
   }
 
 .nav{
+    
     background: white;
     position: fixed;
     top: 0;
@@ -168,6 +169,7 @@ $font-family2: 'Vollkorn', serif;
                     a{  text-align: center; 
                         display: block;
                         color: $primaryLight;
+                        
                         &:hover{
                             
                             color: white;

@@ -1,6 +1,7 @@
 // variables
 //$primaryColor: #be651c;
-$primaryColor: #944713e8;
+//$primaryColor: #944713e8;
+$primaryColor: #9A463D;
 $primaryLight: #dbaa7e;
 $secondaryColor: #3e4447;
 $thirdColor: #d4d9dc;
@@ -323,7 +324,10 @@ $teal: #2a8b83;
     //box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
-    cursor: pointer;
+    cursor:w-resize;
+    &:hover{
+        border: unset;
+    }
     
 
     //this will overide the alignment of items once the card is clicked
